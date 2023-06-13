@@ -1,0 +1,541 @@
+<%= stylesheet_link_tag "index/index" %>
+<div class="main_video">
+    <video  autoplay muted loop>
+        <source src="<%= asset_path('zit.mp4') %>">
+</video>
+</div>
+
+<div class="desktop_heading main_headings">
+    <%= image_tag('headingForDesktop/clientsDesktop.png', alt: 'My Image', class: 'img-fluid') %>
+</div>
+<%= render  "clients" %>
+
+<div class="desktop_heading main_headings">
+    <%= image_tag('headingForDesktop/partnershipDesktop.png', alt: 'My Image', class: 'img-fluid') %>
+</div>
+<%= render  "partnership" %>
+
+
+
+<div class="desktop_heading main_headings">
+    <%= image_tag('headingForDesktop/IndustriesDesktop.png', alt: 'My Image', class: 'img-fluid') %>
+</div>
+<%= render  "industries" %>
+
+<div class="desktop_heading main_headings">
+    <%= image_tag('headingForDesktop/processDesktop.png', alt: 'My Image', class: 'img-fluid') %>
+</div>
+<%= render  "process" %>
+
+
+<div class="desktop_heading main_headings">
+    <%= image_tag('headingForDesktop/whyusDesktop.png', alt: 'My Image', class: 'img-fluid') %>
+</div>
+
+<%= render  "whyus" %>
+
+
+
+<div class="desktop_heading main_headings">
+    <%= image_tag('headingForDesktop/technologyDesktop.png', alt: 'My Image', class: 'img-fluid') %>
+</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+<div class="dev_slider">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide_show_section ent_business_soln_dev">
+                <div class="item" id="item-0">
+                    <h2><a href="/services/business_solutions.html">Business Automation</a></h2>
+                </div>
+                <div class="item" id="item-1">
+                    <h2><a href="/services/business_solutions.html">E-Commerce</a></h2>
+                </div>
+                <div class="item" id="item-2">
+                    <h2><a href="/services/business_solutions.html">Enterprise Resourcing Planning (ERP)</a></h2>
+                </div>
+                <div class="item" id="item-3">
+                    <h2><a href="/services/business_solutions.html">Integrated Management System</a></h2>
+                </div>
+                <div class="item" id="item-4">
+                    <h2><a href="/services/business_solutions.html">Hybrid Applications</a></h2>
+                </div>
+                <div class="item" id="item-5">
+                    <h2><a href="/services/business_solutions.html">Customer Relationship Management (CRM)</a></h2>
+                </div>
+                <div class="item" id="item-6">
+                    <a href="/services/desktop_app_development.html">
+                        <img src="img/home/development_tab/enterprise/windows.png" alt="" />
+                    </a>
+                    <a href="/services/desktop_app_development.html">
+                        <img src="img/home/development_tab/enterprise/linux.png" alt="" />
+                    </a>
+                    <a href="/services/desktop_app_development.html">
+                        <img src="img/home/development_tab/enterprise/mac.png" alt="" />
+                    </a>
+                    <a href="/services/desktop_app_development.html">
+                        <img src="img/home/development_tab/enterprise/chrome.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide slide_show_section design_tab">
+                <div class="item" id="item-0">
+                    <h2><a href="/services/animation.html">AR</a></h2>
+                    <h2><a href="/services/animation.html">VR</a></h2>
+                </div>
+                <div class="item" id="item-1">
+                    <h2><a href="/services/graphic_desinging.html">Typography</a></h2>
+                </div>
+                <div class="item" id="item-2">
+                    <h2><a href="/services/graphic_desinging.html">Infography</a></h2>
+                </div>
+                <div class="item" id="item-3">
+                    <h2><a href="/services/graphic_desinging.html">Doodle</a></h2>
+                    <a href="/services/graphic_desinging.html">
+                        <img src="img/home/development_tab/graphic/Procreate.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-4">
+                    <a href="/services/graphic_desinging.html">
+                        <img src="img/home/development_tab/graphic/adobe.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-5">
+                    <a href="/services/graphic_desinging.html">
+                        <img src="img/home/development_tab/graphic/divanchi.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-6">
+                    <h2><a href="/services/animation.html">VFX - SFX</a></h2>
+                </div>
+                <div class="item" id="item-7">
+                    <a href="/services/graphic_desinging.html">
+                        <img src="img/home/development_tab/graphic/canva.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-8">
+                    <h2><a href="/services/graphic_desinging.html">CorelDraw</a></h2>
+                </div>
+                <div class="item" id="item-9">
+                    <h2><a href="/services/ui_ux.html">UI/UX</a></h2>
+                    <a href="/services/ui_ux.html">
+                        <img class="xd" src="img/home/development_tab/graphic/xd.png" alt="" />
+                    </a>
+                    <a href="/services/ui_ux.html">
+                        <img class="figma" src="img/home/development_tab/graphic/figma.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-10">
+                    <h2><a href="/services/animation.html">3D Modelling</a></h2>
+                    <a href="/services/animation.html">
+                        <img src="img/home/development_tab/graphic/blender.png" alt="" />
+                    </a>
+                    <a href="/services/animation.html">
+                        <img src="img/home/development_tab/graphic/unity.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide slide_show_section marketing_dev">
+                <div class="item" id="item-0">
+                    <h2><a href="/services/marketing.html">Product Marketing Strategy</a></h2>
+                </div>
+                <div class="item" id="item-1">
+                    <h2><a href="/services/marketing.html">
+                            Search Engine Optimization (SEO) <br />
+                            Search Engine Marketing (SEM)
+                        </a></h2>
+                </div>
+                <div class="item" id="item-2">
+                    <h2><a href="/services/marketing.html">Content & PR Services</a></h2>
+                </div>
+                <div class="item" id="item-3">
+                    <h2><a href="/services/marketing.html">Social Media Optimization (SMO)</a></h2>
+                </div>
+                <div class="item" id="item-4">
+                    <h2><a href="/services/marketing.html">Campaigns</a></h2>
+                </div>
+                <div class="item" id="item-5">
+                    <h2><a href="/services/marketing.html">Creative Services</a></h2>
+                </div>
+                <div class="item" id="item-6">
+                    <h2><a href="/services/marketing.html">Ads</a></h2>
+                </div>
+                <div class="item" id="item-7">
+                    <h2><a href="/services/marketing.html">Omnichannel Marketing</a></h2>
+                </div>
+                <div class="item" id="item-8">
+                    <h2><a href="/services/marketing.html">Brand Building</a></h2>
+                </div>
+                <div class="item" id="item-9">
+                    <h2><a href="/services/marketing.html">Pay Per Click</a></h2>
+                </div>
+            </div>
+            <div class="swiper-slide slide_show_section mobile_dev">
+                <div class="item" id="item-0">
+                    <a href="/services/app_development.html">
+                        <img src="img/home/development_tab/mobile/java.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-1">
+                    <a href="/services/app_development.html">
+                        <img src="img/home/development_tab/mobile/xamarin.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-2">
+                    <a href="/services/app_development.html">
+                        <h2>Android</h2>
+                        <img src="img/home/development_tab/mobile/android.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-3">
+                    <a href="/services/app_development.html">
+                        <img src="img/home/development_tab/mobile/kotlin.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-4">
+                    <a href="/services/app_development.html">
+                        <img src="img/home/development_tab/mobile/swift.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-5">
+                    <a href="/services/crossplatform.html">
+                        <img src="img/home/development_tab/mobile/React.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-6">
+                    <a href="/services/app_development.html">
+                        <h2>ios</h2>
+                        <img src="img/home/development_tab/mobile/ios.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-7">
+                    <a href="/services/app_development.html">
+                        <h2>Cloud Application Development</h2>
+                    </a>
+                </div>
+                <div class="item" id="item-8">
+                    <a href="/services/crossplatform.html">
+                        <img src="img/home/development_tab/mobile/flutter.png" alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-9">
+                    <a href="/services/crossplatform.html">
+                        <img src="img/home/development_tab/mobile/native.png" alt="" />
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide slide_show_section outsourcing_dev">
+                <div class="item" id="item-0">
+                    <h2><a href="/services/outsourcing.html">Chief Technology Officer (CTO)</a></h2>
+                </div>
+                <div class="item" id="item-1">
+                    <h2><a href="/services/support.html">Devops</a></h2>
+                </div>
+                <div class="item" id="item-2">
+                    <h2><a href="/services/support.html">Maintenance</a></h2>
+                </div>
+                <div class="item" id="item-3">
+                    <h2><a href="/services/outsourcing.html">Outsourcing</a></h2>
+                </div>
+                <div class="item" id="item-4">
+                    <h2><a href="/services/outsourcing.html">Process Strategies</a></h2>
+                </div>
+                <div class="item" id="item-5">
+                    <h2><a href="/services/support.html">Consulting</a></h2>
+                </div>
+                <div class="item" id="item-6">
+                    <h2><a href="/services/outsourcing.html">Tech Strategies</a></h2>
+                </div>
+                <div class="item" id="item-7">
+                    <h2><a href="/services/support.html">Testing</a></h2>
+                </div>
+                <div class="item" id="item-8">
+                    <h2><a href="/services/support.html">Domain & Hosting</a></h2>
+                </div>
+                <div class="item" id="item-9">
+                    <h2><a href="/services/outsourcing.html">Dedicated Hiring</a></h2>
+                </div>
+            </div>
+            <div class="swiper-slide slide_show_section smart_solutions_dev">
+                <div class="item" id="item-0">
+                    <h2><a href="/services/smart_solutions.html"> Machine Learning</a></h2>
+                </div>
+                <div class="item" id="item-1">
+                    <h2><a href="/services/smart_solutions.html"> Artificial Intelligence</a></h2>
+                </div>
+                <div class="item" id="item-2">
+                    <h2><a href="/services/smart_solutions.html"> Embedded Systems</a></h2>
+                </div>
+                <div class="item" id="item-3">
+                    <h2><a href="/services/smart_solutions.html"> Data Analytics</a></h2>
+                </div>
+                <div class="item" id="item-4">
+                    <h2><a href="/services/smart_solutions.html"> IoT</a></h2>
+                </div>
+                <div class="item" id="item-5">
+                    <h2><a href="/services/smart_solutions.html">Hardware Prototyping</a></h2>
+                </div>
+                <div class="item" id="item-6">
+                    <h2><a href="/services/smart_solutions.html">Data Forecasting</a></h2>
+                </div>
+                <div class="item" id="item-7">
+                    <h2><a href="/services/smart_solutions.html">Business Intelligence</a></h2>
+                </div>
+            </div>
+            <div class="swiper-slide slide_show_section web_dev">
+                <div class="item" id="item-0">
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Bootstrap.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Tailwind.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/ReactJs.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Angular.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Vuejs.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Materialui.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/ASP.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Rails.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Wordpress.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Springboot.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/django.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/nodejs.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/jquery.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Laravel.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Typescript.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/AEM.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/PHP.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/XML.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Firebase.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/java.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Mongodb.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Sass.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Flask.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Flutter.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Leaflet.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/redis.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/mysql.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/postgresql.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/Expressjs.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/dotnet.png " alt="" />
+                    </a>
+                    <a href="services/web_development.html">
+                        <img src="img/home/development_tab/web/nginx.png " alt="" />
+                    </a>
+                </div>
+                <div class="item" id="item-1">
+                    <a href="services/web_development.html">
+                        <h2>Web Portals</h2>
+                    </a>
+                </div>
+                <div class="item" id="item-2">
+                    <a href="services/web_development.html">
+                        <h2>Conversion</h2>
+                    </a>
+                </div>
+                <div class="item" id="item-3">
+                    <a href="services/web_development.html">
+                        <h2>Redesign</h2>
+                    </a>
+                </div>
+                <div class="item" id="item-4">
+                    <a href="services/web_development.html">
+                        <h2>CMS</h2>
+                    </a>
+                </div>
+                <div class="item" id="item-5">
+                    <a href="services/web_development.html">
+                        <h2>API</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div thumbsSlider="" class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide for_open_slide">
+                <div class="svg_name">
+                    <%= render 'development_SVG/enterprise_solutions' %>
+                        <h6>
+                            Enterprise solutions
+                        </h6>
+                </div>
+            </div>
+            <div class="swiper-slide for_open_slide">
+                <div class="svg_name">
+                    <%= render 'development_SVG/GraphicsAndAnimation' %>
+                        <h6>
+                            Graphics <br />
+                            & <br />
+                            Animation
+                        </h6>
+                </div>
+            </div>
+            <div class="swiper-slide for_open_slide">
+                <div class="svg_name">
+                    <%= render 'development_SVG/Marketing' %>
+                        <h6>Marketing</h6>
+                </div>
+            </div>
+            <div class="swiper-slide for_open_slide">
+                <div class="svg_name">
+                    <%= render 'development_SVG/MobileAndCrossPlatform' %>
+                        <h6>
+                            Mobile <br />
+                            & <br />
+                            Cross Platform
+                        </h6>
+                </div>
+            </div>
+            <div class="swiper-slide for_open_slide">
+                <div class="svg_name">
+                    <%= render 'development_SVG/OutsourcingAndSupport' %>
+                        <h6>
+                            Outsourcing <br />
+                            & <br />
+                            Support
+                        </h6>
+                </div>
+            </div>
+            <div class="swiper-slide for_open_slide">
+                <div class="svg_name">
+                    <%= render 'development_SVG/SmartSolution' %>
+                        <h6>
+                            Smart <br />
+                            Solution
+                        </h6>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="svg_name">
+
+                    <%= render 'development_SVG/WebDesigningAndDevelopment' %>
+
+                        <h6>
+                            Web Designing <br />
+                            & <br />
+                            Development
+                        </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.1.0/swiper-bundle.min.js"></script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 10,
+        slidesPerView: 2,
+        breakpoints: {
+            300: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+            },
+            500: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            700: {
+                slidesPerView: 4,
+                spaceBetween: 10,
+            },
+
+            900: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            1100: {
+                slidesPerView: 6,
+                spaceBetween: 10,
+            },
+            1200: {
+                slidesPerView: 7,
+                spaceBetween: 10,
+            },
+        },
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+            swiper: swiper,
+        },
+    });
+</script>
+
+
+<div class="desktop_heading main_headings"></div>
+    <%= image_tag('headingForDesktop/joinDesktop.png', alt: 'My Image', class: 'img-fluid') %>
+</div>
+<%= render  "joinOurFamily" %>
+
+<%#= image_tag('partnership/04.png', alt: 'My Image') %>
+
+
+
+

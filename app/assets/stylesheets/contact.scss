@@ -1,0 +1,203 @@
+@import "main";
+
+.contact-us {
+	width: 100%;
+	margin-top: 5rem;
+
+	.logo_img {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.contact_form {
+		max-width: 1200px;
+		margin: 2rem auto;
+		min-height: 20rem;
+		background: $primary;
+		padding: 2rem;
+		border-radius: $border_arc;
+
+		form {
+			input {
+				border-radius: 2rem;
+				padding: 10px 20px;
+				border: none;
+				outline: none;
+			}
+
+			.radio_btn {
+				width: 20px;
+				height: 20px;
+			}
+
+			label {
+				margin: 0;
+				font-size: 1.2rem;
+
+			}
+
+			.user_info {
+				display: grid;
+				grid-template-rows: 1fr 1fr;
+				grid-template-columns: 1fr 1fr 1fr 1fr;
+				gap: 10px;
+				height: 100%;
+				padding: 10px;
+
+				input {
+					width: 100%;
+				}
+
+				#user_name {
+					grid-row-start: 1;
+					grid-column-start: 1;
+					grid-row-end: 2;
+					grid-column-end: 3;
+				}
+
+				#user_mail {
+					grid-row-start: 1;
+					grid-column-start: 3;
+					grid-row-end: 2;
+					grid-column-end: 5;
+				}
+
+				#user_subject {
+					grid-row-start: 2;
+					grid-column-start: 1;
+					grid-row-end: 3;
+					grid-column-end: 4;
+				}
+
+				#user_number {
+					grid-row-start: 2;
+					grid-column-start: 4;
+					grid-row-end: 3;
+					grid-column-end: 5;
+				}
+			}
+
+			.project_deadline {
+				width: 100%;
+				padding: 10px 0 0 10px;
+
+				.time_radio_button {
+					display: flex;
+					align-items: center;
+					padding: 10px 0 0 0;
+
+					label {
+						margin: 0 10px;
+					}
+				}
+			}
+
+			.required_services {
+				width: 100%;
+				padding: 10px 0 0 10px;
+
+				.services {
+					// display: flex;
+					align-items: center;
+					padding: 10px 0 0 0;
+					width: 100%;
+					flex-wrap: wrap;
+
+					.accordion {
+						--bs-accordion-bg: none;
+						--bs-accordion-color: $pour-white;
+						--bs-accordion-active-color: $pour-white;
+						--bs-accordion-active-bg: none;
+						--bs-accordion-btn-focus-border-color: none;
+						--bs-accordion-btn-focus-box-shadow: none;
+						--bs-accordion-border-color: none;
+
+						h2 {
+							button {
+								padding: 20px 0;
+								--bs-accordion-btn-color: $pour-white;
+							}
+						}
+					}
+
+					.accordion-button::after {
+						background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+					}
+
+					.row {
+						.col {
+							display: flex;
+							align-items: center;
+
+							input {
+								width: 20px;
+								height: 20px;
+							}
+
+							label {
+								margin: 0 10px;
+							}
+						}
+					}
+				}
+
+
+			}
+
+			.usermessage {
+				width: 100%;
+				padding: 10px;
+
+				textarea {
+					width: 100%;
+					border-radius: 2rem;
+					padding: 10px 20px;
+					height: 3rem;
+				}
+			}
+
+			.nda_form {
+				width: 100%;
+				padding: 10px;
+				display: flex;
+				justify-content: space-between;
+
+				.text {
+					width: 70%;
+				}
+
+				.Y_N-options {
+					width: 30%;
+					display: flex;
+					justify-content: space-around;
+
+					.option {
+						display: flex;
+						align-items: center;
+
+						label {
+							margin: 0 10px;
+						}
+					}
+				}
+			}
+
+			.submit_btn {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+
+				button {
+					border-radius: 3rem;
+					background: $pour-white;
+					outline: none;
+					border: none;
+					padding: 1rem 4rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,210 @@
+@import "main";
+
+	.about_page_heading {
+		width: 100%;
+		height: calc(100vh - 5rem);
+		margin-top: 5rem;
+		display: grid;
+		place-items: center;
+
+		.main_heading {
+			position: relative;
+			margin: 0 0 0 2rem;
+
+			.heading {
+				color: $pour-white;
+				// font-family: 'Roboto';
+				font-size: 20vw;
+				font-weight: 600;
+			}
+
+			.why_us,
+			.founder_message,
+			.who_we_are {
+				position: absolute;
+				font-weight: 300;
+
+				a {
+					color: $pour-white;
+					text-decoration: none;
+				}
+			}
+
+			.why_us {
+				top: 3rem;
+				right: 19vw;
+				font-size: 4.5vw;
+			}
+
+			.founder_message {
+				bottom: 1rem;
+				left: 2vw;
+				font-size: 4vw;
+			}
+
+			.who_we_are {
+				bottom: -0.5rem;
+				left: -2vw;
+				transform: rotate(-90deg);
+				transform-origin: left;
+				font-size: 3.5vw;
+			}
+		}
+	}
+
+	.who_we_container {
+		.who_we_are_con {
+			width: 100%;
+			display: flex;
+			margin: 2rem 0;
+
+			.we_are_text {
+				width: 60%;
+				padding: 2rem 60px;
+
+				p {
+					font-size: 1.3rem;
+
+				}
+
+			}
+
+			.we_are_img {
+				width: 40%;
+				display: grid;
+				place-items: center;
+
+			}
+		}
+	}
+
+	.who_we_are_slider {
+		// @mixin white-gradient {
+		// 	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+		// }
+
+		// $animationSpeed: 40s;
+
+		// Animation
+		// @keyframes scroll {
+		// 	0% { transform: translateX(0); }
+		// 	100% { transform: translateX(calc(-250px * 7))}
+		// }
+
+
+		// Styling
+		.slider {
+			background-color: transparent;
+			box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+			height: 100px;
+			margin: auto;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+
+			&::before,
+			&::after {
+				// @include white-gradient;
+				content: "";
+				height: 100px;
+				position: absolute;
+				width: 200px;
+				z-index: 2;
+			}
+
+			&::after {
+				right: 0;
+				top: 0;
+				transform: rotateZ(180deg);
+			}
+
+			&::before {
+				left: 0;
+				top: 0;
+			}
+
+			.slide-track {
+				animation: scroll $animationSpeed linear infinite;
+				display: flex;
+				width: calc(250px * 14 + (.5rem * 14));
+			}
+
+			.slide {
+				height: 100px;
+				width: 250px;
+				margin: 0 .5rem;
+				img{
+					width: 100%;
+				}
+			}
+		}
+
+	}
+
+	
+
+	.foundermessage_container {
+		.message_img {
+			width: 100%;
+			display: flex;
+
+			.message {
+				width: 60%;
+				padding: .5rem 60px;
+
+				.msg {
+					position: relative;
+					display: grid;
+					place-items: center;
+
+					p {
+						padding: 2rem 60px;
+						font-size: 2rem;
+
+					}
+
+					.invertedcomma_start,
+					.invertedcomma_end {
+						position: absolute;
+
+						img {
+							width: 60px;
+						}
+					}
+
+					.invertedcomma_start {
+						top: 0;
+						left: 0;
+					}
+
+					.invertedcomma_end {
+						bottom: 0;
+						right: 0;
+					}
+				}
+
+				.founder_name {
+					padding: 60px;
+
+					h2 {
+						font-size: 2rem;
+					}
+
+					h3 {
+						font-size: 1.5rem;
+					}
+				}
+			}
+
+			.founder_img {
+				width: 40%;
+				display: grid;
+				place-items: center;
+			}
+
+		}
+	}
+
+
+
+

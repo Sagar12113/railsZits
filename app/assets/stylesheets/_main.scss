@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+$animationSpeed: 50s;
+$shadow : 1px 1px 5px rgba(5, 5, 5, 0.529);
+$pour-white: #fff;
+$black: #000;
+$primary: #1A1A1A;
+$bg : #313131;
+$secondary : #9747FF;
+$map : #1A1A1A;
+$dull-white: #8C8C8C;
+$border_arc : 10px;
+
+body {
+	background-color: $bg;
+	color: $pour-white;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+ul {
+	padding: 0;
+
+	li {
+		list-style: none;
+
+		a {
+			text-decoration: none;
+			color: $pour-white;
+		}
+	}
+}
+a {
+	text-decoration: none;
+	color: $pour-white;
+	&:hover{
+	color: $pour-white;
+
+	}
+}
+
+.btn_2 {
+	background: transparent;
+	padding: 0px 15px;
+	border-radius: 2rem;
+	border: .2rem solid $secondary;
+	width: 10rem;
+	display: grid;
+	place-items: center; 	
+
+	a {
+		text-decoration: none;
+		color: $secondary;
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+}
+
+.nav_contact_btn {
+	padding: .2rem;
+	border-radius: 2rem;
+	width: fit-content;
+	display: flex;
+
+	.box,
+	.sub_btn {
+		background: transparent;
+		padding: 0px 15px;
+		border-radius: 2rem;
+		border: .2rem solid $secondary;
+		width: 10rem;
+		display: grid;
+		place-items: center;
+
+		a {
+			text-decoration: none;
+			color: $secondary;
+			font-size: 1.3rem;
+			font-weight: 600;
+		}
+	}
+}

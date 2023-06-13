@@ -1,0 +1,237 @@
+@import "main";
+
+footer {
+	width: 100%;
+
+	// overflow: hidden;
+	.to_reach {
+		width: 100%;
+		background: $primary;
+		height: fit-content;
+		display: flex;
+		padding: 1rem;
+		margin-bottom: 2rem;
+
+		.content {
+			width: 60%;
+
+			h2 {
+				font-size: clamp(3rem, 4vw, 5rem);
+			}
+
+			.btn_footer {
+				margin: 2rem 0;
+				background: transparent;
+				padding: .5rem 1rem;
+				border-radius: 2rem;
+				border: .2rem solid $secondary;
+				width: fit-content;
+				display: grid;
+				place-items: center;
+				a {
+					text-decoration: none;
+					color: $secondary;
+					font-size: clamp(1.6rem, 1.8vw, 2.4rem);
+					// font-weight: 600;
+				}
+			}
+		}
+
+		.img {
+			width: 40%;
+			display: grid;
+			place-items: center;
+
+			img {
+				width: 50%;
+			}
+		}
+	}
+
+	.footer_direct_link {
+		max-width: 90%;
+		margin:0 auto;
+		min-height: 9rem;
+		background: $primary;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		border-radius: $border_arc;
+		ul{
+			margin-bottom: 0;
+		}
+
+		.link_col_1 {
+			width: calc(100% / 4);
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			text-align: end;
+			padding: 0 1rem 0 0;
+			border-right: 2px solid $pour-white;
+			margin: 1rem 0;
+		}
+
+		.link_col_2 {
+			width: calc(100% / 4);
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			text-align: end;
+			padding: 0 1rem 0 0;
+			border-right: 2px solid $pour-white;
+			margin: 1rem 0;
+		}
+
+		.link_col_3 {
+			width: calc(100% / 4);
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			text-align: end;
+			padding: 0 1rem 0 0;
+			border-right: 2px solid $pour-white;
+			margin: 1rem 0;
+		}
+
+		.link_col_4 {
+			width: calc(100% / 4);
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			text-align: end;
+			padding: 0 1rem 0 0;
+			margin: 1rem 0;
+		}
+	}
+
+	.tel_support_box {
+		width: 100%;
+		min-height: 7.5rem;
+		display: flex;
+
+		.tel_support_1 {
+			width: calc(100% / 3);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				width: 3.5rem;
+				height: 3.5rem;
+			}
+
+			.tel_1 {
+				margin: 0 1rem;
+
+				label {
+					color: $pour-white;
+					font-size: 1.3rem;
+				}
+
+				p {
+					color: rgba($color: #fff, $alpha: .7);
+					font-size: .7rem;
+					margin: 0 0 0 .5rem;
+				}
+			}
+		}
+
+		.tel_support_2 {
+			width: calc(100% / 3);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				width: 3.5rem;
+				height: 3.5rem;
+			}
+
+			.tel_1 {
+				margin: 0 1rem;
+
+				label {
+					color: $pour-white;
+					font-size: 1.3rem;
+				}
+
+				p {
+					color: rgba($color: #fff, $alpha: .7);
+					font-size: .7rem;
+					margin: 0 0 0 .5rem;
+				}
+			}
+		}
+
+		.tel_support_3 {
+			width: calc(100% / 3);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			img {
+				width: 3.5rem;
+				height: 3.5rem;
+			}
+
+			.tel_1 {
+				margin: 0 1rem;
+
+				address {
+					color: $pour-white;
+					font-size: 1.3rem;
+					margin-bottom: 0;
+				}
+
+				p {
+					color: rgba($color: #fff, $alpha: .7);
+					font-size: .7rem;
+					margin: 0 0 0 .5rem;
+				}
+			}
+		}
+	}
+
+	.copy_right {
+		width: 100%;
+		min-height: 3rem;
+		background: $black;
+		color: $pour-white;
+		display: flex;
+		align-items: center;
+		position: relative;
+
+		p {
+			width: 50%;
+			margin: 0 0 0 3rem;
+		}
+
+		.social {
+			width: 50%;
+			display: flex;
+
+			i {
+				margin: 0 1rem;
+				font-size: 1.5rem;
+			}
+		}
+
+		.top_link {
+			position: absolute;
+			margin: .5rem;
+			right: 3rem;
+			border: 2px solid $secondary;
+			display: grid;
+			place-items: center;
+			width: 2rem;
+			height: 2rem;
+			border-radius: 50%;
+
+			a {
+				color: $secondary;
+				text-decoration: none;
+			}
+		}
+	}
+}
